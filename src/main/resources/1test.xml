@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke" parallel="tests" thread-count="1" verbose="10">
+    <listeners>
+        <listener class-name="tests.WebDriverListener"/>
+        <!--listener class-name="commons.listeners.TestListener"/-->
+    </listeners>
+
+    <test name="LoginPractis">
+        <classes>
+            <class name="tests.app.login"></class>
+        </classes>
+    </test>
+
+    <test name="d1">
+        <classes>
+            <class name="tests.app.buttonDo1"></class>
+        </classes>
+    </test>
+</suite>
